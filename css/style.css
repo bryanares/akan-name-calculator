@@ -1,4 +1,13 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+* {
+  font-family: "Poppins", sans-serif;
+}
 .navbar{
     border-radius: 0px;
     margin-bottom: 0px;
+}
+.jumbotron{
+    background: url(../img/calendar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
