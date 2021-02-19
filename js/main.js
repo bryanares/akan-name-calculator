@@ -1,6 +1,6 @@
 const akanForm = document.querySelector("#akanForm");
 const outputContainer = document.querySelector("#output");
-const genderValue = ()=>{
+const genderValue = () =>{
     if(document.getElementById("male").selected){
         return document.getElementById('male').value;
     }
@@ -27,4 +27,15 @@ akanForm.addEventListener("submit", function(e){
     let dateOfBirth = new Date(yy, mm, dd);
     let day = dateOfBirth.getDay();
     let weekDay = days[day];
+    
+    let yourAkan;
+
+    if (userBirthday === ""){
+        alert("Please select your Birthday.");
+    }
+    if (genderValue() === false){
+        alert("Please select your Gender.");
+    }
+
+    
 })
