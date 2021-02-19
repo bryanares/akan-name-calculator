@@ -19,5 +19,12 @@ akanForm.addEventListener("submit", function(e){
 
     const userBirthday = akanForm.elements.date.value;
     //console.log(userBirthday);
-    
+
+    let birthdayArray = userBirthday.split("-");
+    let yy = birthdayArray[0];
+    let mm = birthdayArray[1]-1;
+    let dd = birthdayArray[2];
+    let dateOfBirth = new Date(yy, mm, dd);
+    let day = dateOfBirth.getDay();
+    let weekDay = days[day];
 })
