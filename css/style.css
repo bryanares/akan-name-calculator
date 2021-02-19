@@ -10,4 +10,8 @@
     background: url(../img/calendar.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
+
+  }
+#output{
+  text-align: center;
+  
