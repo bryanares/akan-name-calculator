@@ -37,11 +37,16 @@ akanForm.addEventListener("submit", function(e){
         alert("Please select your Gender.");
     }
 
-    const output = "Sweet! You were born on a  ${weekDay} . Your Akan name is :";
+    //const output = "Sweet! You were born on a  ${weekDay} . Your Akan name is : ";
 
     if (genderValue() === "male"){
         yourAkan = maleAkanNames[day];
-        outputContainer.innerText = 
+        outputContainer.innerText = "Sweet! You were born on " +weekDay + ". Your Akan name is : " +yourAkan;
+        akanForm.reset();
+    }
+    if (genderValue() === "female"){
+        yourAkan = femaleAkanNames[day];
+        outputContainer.innerText = "Sweet! You were born on " +weekDay + ". Your Akan name is : " +yourAkan;
         akanForm.reset();
     }
     
