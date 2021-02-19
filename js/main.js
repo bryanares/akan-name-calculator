@@ -4,7 +4,7 @@ const genderValue = ()=>{
     if(document.getElementById("male").selected){
         return document.getElementById('male').value;
     }
-    if(document.getElementById("female")).selected{
+    if(document.getElementById("female").selected){
         return document.getElementById("female").value;
     }
     return false;
@@ -17,5 +17,7 @@ akanForm.addEventListener("submit", function(e){
     const femaleAkanNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
+    const userBirthday = akanForm.elements.date.value;
+    //console.log(userBirthday);
     
 })
